@@ -1,26 +1,24 @@
 #include <stdio.h>
 
 /**
- * main - Entry point
+ * main - entry point
  * Return: Always 0 (Success)
  */
 int main(void)
 {
-	char ch;
-	char cma = ',';
-	char esp = ' ';
+	int nm = 48;
 
-	for (ch = '0'; ch <= '9'; ch++)
+	while (nm <= 57)
 	{
-		if (ch <= '8')
+		while (nm <= 56)
 		{
-			putchar(ch);
-			putchar(cma);
-			putchar(esp);
+			putchar(nm);
+			putchar(',');
+			putchar(' ');
+			nm++;
 		}
-		else if (ch == '9')
-			putchar(ch);
+		putchar(nm);
+		nm++;
 	}
 	return (0);
-
 }
