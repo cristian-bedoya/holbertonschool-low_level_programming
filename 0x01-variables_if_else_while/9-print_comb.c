@@ -12,7 +12,7 @@ int main(void)
 
 	for (ch = '0'; ch <= '9'; ch++)
 	{
-		if (ch <= '8' )
+		if (ch <= '8')
 		{
 			putchar(ch);
 			putchar(cma);
