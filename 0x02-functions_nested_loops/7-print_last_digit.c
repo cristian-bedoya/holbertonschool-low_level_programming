@@ -3,7 +3,7 @@
 /**
  * print_sign -  print the last digit
  *
- * @n: n is integer
+ * n is integer
  * Return: n.
  */
 int print_last_digit(int n)
@@ -12,7 +12,7 @@ int print_last_digit(int n)
 
 	if (n < 0)
 	{
-		n = -n;
+		n = (n * -1);
 	}
 	_putchar(n + 48);
 	return (n);
