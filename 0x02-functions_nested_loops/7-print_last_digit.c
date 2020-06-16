@@ -1,7 +1,7 @@
 #include "holberton.h"
 
 /**
- * print_sign - sign of a number.
+ * print_sign -  print the last digit
  *
  * @n: n is integer
  * Return: 1 +, cer0 , -1.
@@ -9,19 +9,12 @@
 
 int print_last_digit(int n)
 {
+	n = n % 10;
 
-	int ld = 0;
-
-	if (n >= 0)
+	if ( n < 0)
 	{
-		ld = ((n % 10) + 48);
-		_putchar(ld);
+		n = -n;
 	}
-	else if (n < 0)
-	{
-		n = n * -1;
-		ld = ((n % 10) + 48);
-		_putchar(ld);
-	}
+	_putchat(n + 48;
 	return (n);
 }
