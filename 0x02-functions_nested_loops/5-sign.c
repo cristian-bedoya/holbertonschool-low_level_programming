@@ -5,7 +5,6 @@
  *c : character to check..
  *return: 1 is lower 0 if is not
  */
-
 int print_sign(int n)
 {
 	if (n > 0)
