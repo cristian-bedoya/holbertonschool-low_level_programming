@@ -4,9 +4,8 @@
  * print_sign -  print the last digit
  *
  * @n: n is integer
- * Return: 1 +, cer0 , -1.
+ * Return: n.
  */
-
 int print_last_digit(int n)
 {
 	n = n % 10;
@@ -15,6 +14,6 @@ int print_last_digit(int n)
 	{
 		n = -n;
 	}
-	_putchat(n + 48;
+	_putchar(n + 48;
 	return (n);
 }
