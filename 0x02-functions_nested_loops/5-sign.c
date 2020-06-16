@@ -1,9 +1,10 @@
 #include "holberton.h"
 
 /**
- *main - prints the sign of a number
- *c : character to check..
- *return: 1 is lower 0 if is not
+ * print_sign - sign of a number.
+ *
+ * @n: n is integer
+ * Return: 1 +, cer0 , -1.
  */
 int print_sign(int n)
 {
