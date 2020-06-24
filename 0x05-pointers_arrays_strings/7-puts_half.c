@@ -9,7 +9,8 @@
 
 void puts_half(char *str)
 {
-    int a, b;
+	int a;
+	int b;
 
 	a = 0;
 	b = 0;
