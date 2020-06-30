@@ -1,26 +1,26 @@
 #include "holberton.h"
-#include <stdio.h>
 
 /**
- * *_strchr - locates a character in a string
- * @s: string to search
- * @c: char to find
+ * *_strstr - locates a substring
+ * @haystack: string to search in
+ * @needle: substring to look for
  *
- * Return: a pointer to the first occurrence of the character
- * c in the string s, or NULL if the character is not found
+ * Return: pointer to the beginning of the located substring
+ * or NULL if the substring is not found
  */
-char *_strchr(char *s, char c)
+char *_strstr(char *haystack, char *needle)
 {
-	for (; *s != '\0';)
-	{
-		if (*s == c)
-		{
-			return (s);
-		}
-		s++;
+	int i, j;
 
-		if (*s == c)
-			return (s);
+	for (i = 0; haystack[i] != '\0'; i++)
+	{
+		for (j = 0; needle[j] != '\0'; j++)
+		{
+			if (haystack[i + j] != needle[j])
+				break;
+		}
+		if (!needle[j])
+			return (&haystack[i]);
 	}
-	return (NULL);
+	return ('\n');
 }
