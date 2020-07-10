@@ -34,17 +34,15 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 
 	for (i = 0; i < lens1; i++)
 		str[i] = s1[i];
-	for (j = 0; n >= lens2 && i < (lens1 + lens2); j++)
+	for (j = 0; n >= lens2 && i < (lens1 + lens2);)
 	{
-		str[lens1] = s2[j];
-		i++;
+		str[i++] = s2[j++];
 	}
-	for (j = 0; n < lens2 && i < (lens1 + n); j++)
+	for (j = 0; n < lens2 && i < (lens1 + n);)
 	{
-		str[lens1] = s2[j];
-		i++;
+		str[i++] = s2[j++];
 	}
 
-	str[lens1] = '\0';
+	str[i] = '\0';
 	return (str);
 }
