@@ -38,7 +38,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 	dog_t *dog;
 	int len1 = 0, len2 = 0;
 
-	while (name[len2] != '\0')
+	while (name[len1] != '\0')
 		len1;
 	while (name[len2] != '\0')
 		len2;
