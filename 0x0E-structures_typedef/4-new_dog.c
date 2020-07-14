@@ -1,4 +1,3 @@
-#include <string.h>
 #include <stdlib.h>
 #include "dog.h"
 
@@ -40,7 +39,7 @@ dog_t *new_dog(char *name, float age, char *owner)
 
 	while (name[len1] != '\0')
 		len1;
-	while (name[len2] != '\0')
+	while (owner[len2] != '\0')
 		len2;
 
 	dog = malloc(sizeof(dog_t));
