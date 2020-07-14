@@ -38,9 +38,9 @@ dog_t *new_dog(char *name, float age, char *owner)
 	int len1 = 0, len2 = 0;
 
 	while (name[len1] != '\0')
-		len1;
+		len1++;
 	while (owner[len2] != '\0')
-		len2;
+		len2++;
 
 	new_dog = malloc(sizeof(struct dog));
 	if (!new_dog)
@@ -63,5 +63,5 @@ dog_t *new_dog(char *name, float age, char *owner)
 	_strcpy(new_dog->owner, owner);
 	new_dog->age = age;
 
-	return (new_dog); 
+	return (new_dog);
 }
