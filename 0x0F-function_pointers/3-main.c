@@ -21,19 +21,20 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(98);
 	}
-	if (*argv[2] != '+' &&  *argv[2] && '-' && *argv[2] != '%'
-	    && *argv[2] != '/' && *argv[2] != '*')
+	if (!operation)
 	{
 		printf("Error\n");
 		exit(99);
 	}
-	if ((*argv[2] == '/' || *argv[2] == '%') && num2 == 0)
+	if ((*argv[2] == '/' || *argv[2] == '%') && *argv[3] == '0')
 	{
 		printf("Error\n");
 		exit(100);
 	}
 
 	result = operation(num1, num2);
+
 	printf("%d\n", result);
+
 	return (0);
 }
