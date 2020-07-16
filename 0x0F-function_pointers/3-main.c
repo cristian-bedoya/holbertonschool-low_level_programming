@@ -11,7 +11,7 @@ int main(int argc, char *argv[])
 {
 	int num1, num2, result;
 	int (*operation)(int, int);
-	char sign = *argv[2];
+	char sign;
 
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[3]);
