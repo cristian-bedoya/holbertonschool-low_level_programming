@@ -33,6 +33,9 @@ void print_all(const char * const format, ...)
 					str = "(nill)";
 				printf("%s%s", separator, str);
 				break;
+			default:
+				i++;
+				continue;
 			}
 			separator = ", ";
 			i++;
