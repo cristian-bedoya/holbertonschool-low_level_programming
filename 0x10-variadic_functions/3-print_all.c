@@ -22,7 +22,7 @@ void print_all(const char * const format, ...)
 				printf("%s%c", separator, va_arg(list, int));
 				break;
 			case 'i':
-				printf("%s%i", separator, va_arg(list, int));
+				printf("%s%d", separator, va_arg(list, int));
 				break;
 			case 'f':
 				printf("%s%f", separator, va_arg(list, double));
