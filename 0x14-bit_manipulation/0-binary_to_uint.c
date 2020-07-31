@@ -27,13 +27,13 @@ unsigned int binary_to_uint (const char *b)
 	int i;
 	unsigned int  len = 0, dec = 0;
 
+	if (!b)
+		return (0);
 
 	while (b[len])
 		len++;
 	len -= 1;
 
-	if (!b)
-		return (0);
 
 	for (i = 0; b[i]; i++)
 	{
