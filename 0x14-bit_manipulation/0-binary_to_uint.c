@@ -24,7 +24,8 @@ int _pow_recursion(int x, int y)
  */
 unsigned int binary_to_uint (const char *b)
 {
-	unsigned int i, len = 0, dec = 0;
+	int i;
+	unsigned int  len = 0, dec = 0;
 
 
 	while (b[len])
