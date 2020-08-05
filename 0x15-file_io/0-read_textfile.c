@@ -34,7 +34,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 	buffer[s_lecture] = '\0';
 
-	s_pasted = write(1, buffer, s_lecture);
+	s_pasted = write(STDOUT_FILENO, buffer, s_lecture);
 	if (s_pasted == -1)
 		return (0);
 
